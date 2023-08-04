@@ -2,9 +2,11 @@
 A 3D space battle simulation written in BASIC for the TRS-80 Model 100 or the NEC PC-8201A.
 
 Revision History:
+
 2023_08_04 Line 4560 was updated in all three versions to replace E2=2 with E2>1 so program exits if there were more than 2 energy banks destroyed.
 
 The list of files is as follows:
+
 Readme.txt:  This file.  (Updated 8/4/23)
 
 SPCGAM.ba.txt:   Commented version of the BASIC program.   This is the version recommended for the online emulator, CloudT.  (Updated 8/4/23)

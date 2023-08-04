@@ -1,5 +1,5 @@
 10 REM Space Game by Lloyd Johnson
-20 REM July 25,2023 - TRS80 M100 Version
+20 REM August 4,2023 - TRS80 M100 Version
 30 REM Initialization Section
 40 DEFINTA-Z:DR!=1.74532E-2:RD!=1/DR!:P2!=1.570796
 50 DIMXS(11),YS(11),ZS(11),XA(9),YA(9),ZA(9)
@@ -453,6 +453,6 @@
 4530 IFEB!(J)=0THENE2=E2+1:E0=JELSEIFEB!(J)<4THENK=1
 4540 NEXT
 4550 IFE2=1ANDE1=0THENPRINT"   Energy Bank "CHR$(A+E0)" destroyed!":GOTO4580
-4560 IFE2=2THENPRINT"   Another energy bank was destroyed!":GOSUB2910:GOTO1810
+4560 IFE2>1THENPRINT"   Another energy bank was destroyed!":GOSUB2910:GOTO1810
 4570 IFK=1ANDE2=E1THENPRINT"   Energy bank status is critical"ELSEPRINT
 4580 E1=E2:RETURN
